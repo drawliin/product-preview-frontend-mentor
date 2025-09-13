@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.picture {
+    background-image: url("./images/image-product-mobile.jpg");
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    width: 90%;
+}
+
+.perfume {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+h1,
+.prices .price {
+    font-family: "Fraunces";
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin: 10px 0;
+}
+
+.prices {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.prices .price {
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.prices .old-price {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+@media(min-width: 1440px) {
+    .container {
+        width: 900px;
+        flex-direction: row;
+        gap: 25px;
+        height: 600px;
+    }
+
+    .picture {
+        background-image: url("./images/image-product-desktop.jpg");
+        height: 100%;
+        width: 50%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .data {
+        align-self: center;
+        margin-bottom: 0;
+        gap: 30px;
+        flex: 0.85;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .prices {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .prices .price {
+        color: hsl(158, 36%, 37%);
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .prices .old-price {
+        color: hsl(228, 12%, 48%);
+        font-size: 14px;
+        text-decoration: line-through;
+    }
+
+    button {
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(158, 36%, 37%);
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
