@@ -13,7 +13,12 @@
 
 <body>
   <div class="container">
-    <div class="picture"></div>
+    <picture class="picture">
+      <!-- Desktop image -->
+      <source media="(min-width: 1440px)" srcset="./images/image-product-desktop.jpg">
+      <!-- Mobile image (default) -->
+      <img src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum">
+    </picture>
     <div class="data">
       <span class="perfume">PERFUME</span>
       <h1>Gabrielle Essence Eau De Parfum</h1>
